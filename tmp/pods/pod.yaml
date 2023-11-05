@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: inferenceservice-config
+  namespace: set
+data:
+  metricsAggregator: |-
+    {
+      "enableMetricAggregation": "false",
+      "enablePrometheusScraping" : "false"
+    }
